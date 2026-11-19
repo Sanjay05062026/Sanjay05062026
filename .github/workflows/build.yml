@@ -13,6 +13,7 @@ on:
       - profile.toml
       - README.template.md
       - tools/**
+      - assets/avatar.webp
       - .github/workflows/build.yml
 
 permissions:
@@ -37,6 +38,11 @@ jobs:
         run: python tools/build.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # If any check fails the job stops here and nothing is committed,
+      # so your profile keeps showing the last good version.
+      - name: Check the generated profile
+        run: python tools/check.py
 
       - name: Commit if anything changed
         run: |
