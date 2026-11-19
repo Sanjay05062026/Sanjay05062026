@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username={{HANDLE}}&label=PROFILE%20VIEWS&color=7c3aed&style=for-the-badge" alt="Profile views" />
-  <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20COLLAB-22c55e?style=for-the-badge&labelColor=0a1122" alt="Open to collaborate" />
+  <img src="https://komarev.com/ghpvc/?username={{HANDLE}}&label=PROFILE%20VIEWS&color=151515&style=for-the-badge" alt="Profile views" />
+  <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20COLLAB-151515?style=for-the-badge&labelColor=6f6d68" alt="Open to collaborate" />
 </p>
 
 <img src="assets/sections/about.svg" width="100%" alt="01 Who am I" />

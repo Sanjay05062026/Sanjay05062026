@@ -129,7 +129,6 @@ def project_entry(r: dict | None, e: dict, idx: int) -> dict:
         "lang": primary,
         "live": live,
         "url": live or r.get("html_url") or f"https://github.com/{e.get('repo', '')}",
-        "color": e.get("color") or cards.PALETTE[idx % len(cards.PALETTE)],
     }
 
 
@@ -166,7 +165,7 @@ def stack_html(cfg: dict) -> str:
             alt = ", ".join(SKILL_NAMES.get(i, i.capitalize()) for i in icons)
             cell.append(f'<img src="https://skillicons.dev/icons?i={",".join(icons)}&theme=dark" height="44" alt="{alt}" />')
         for b in s.get("badges", []):
-            cell.append(f'<img src="{shield(b["text"], b.get("sub", ""), b.get("color", "a78bfa"), labelColor="0a1122")}" height="28" alt="{b["text"]}" />')
+            cell.append(f'<img src="{shield(b["text"], b.get("sub", ""), b.get("color", "3d3c3a"), labelColor="151515")}" height="28" alt="{b["text"]}" />')
         label = s["label"].replace(" ", "&nbsp;")
         rows.append(f"  <tr>\n    <td><b>{label}</b></td>\n    <td>{' '.join(cell)}</td>\n  </tr>")
     return '<table align="center">\n' + "\n".join(rows) + "\n</table>"
@@ -209,15 +208,15 @@ def all_works_md(data: dict | None, items: list[dict]) -> str:
 
 def links_html(cfg: dict, handle: str) -> str:
     L = cfg.get("links", {})
-    items = [("GitHub", f"https://github.com/{handle}", "0a1122", "github")]
+    items = [("GitHub", f"https://github.com/{handle}", "151515", "github")]
     if L.get("linkedin"):
-        items.append(("LinkedIn", L["linkedin"], "0A66C2", ""))
+        items.append(("LinkedIn", L["linkedin"], "151515", ""))
     if L.get("instagram"):
-        items.append(("Instagram", L["instagram"], "E4405F", "instagram"))
+        items.append(("Instagram", L["instagram"], "151515", "instagram"))
     if L.get("email"):
-        items.append(("Email", f"mailto:{L['email']}", "7c3aed", "gmail"))
+        items.append(("Email", f"mailto:{L['email']}", "151515", "gmail"))
     if L.get("website"):
-        items.append(("Website", L["website"], "22d3ee", "googlechrome"))
+        items.append(("Website", L["website"], "151515", "googlechrome"))
     imgs = []
     for name, url, color, logo in items:
         extra = {"logo": logo, "logoColor": "white"} if logo else {}
@@ -251,7 +250,8 @@ def main() -> None:
                 "contact": ("05", "CONNECT", "// say hi")}
 
     print("rendering:")
-    write("header.svg", cards.header(cfg))
+    avatar = OUT / "avatar.webp"  # 3D turntable, built once by tools/turntable.py
+    write("header.svg", cards.header(cfg, avatar.read_bytes() if avatar.exists() else None))
     gh_row = None
     if data:
         total = sum(c for _, c in data["calendar"])

@@ -55,8 +55,8 @@ icons = ["python", "java", "js", "cs", "html", "css"]
 label = "🧠 AI · Vision"
 icons = ["pytorch", "opencv"]
 badges = [
-  { text = "YOLO", sub = "Ultralytics", color = "0b23a9" },
-  { text = "Ollama", sub = "Local LLMs", color = "a78bfa" },
+  { text = "YOLO", sub = "Ultralytics", color = "3d3c3a" },
+  { text = "Ollama", sub = "Local LLMs", color = "3d3c3a" },
 ]
 
 [[stack]]
@@ -69,12 +69,12 @@ icons = ["git", "github", "vscode", "vercel", "windows"]
 
 [exploring]
 chips = [
-  ["AI AGENTS", "22d3ee"],
-  ["AUTOMATION", "a78bfa"],
-  ["COMPUTER VISION", "f472b6"],
-  ["LLM FINE-TUNING", "fbbf24"],
-  ["FRONTEND DESIGN", "34d399"],
-  ["HACKATHONS", "60a5fa"],
+  ["AI AGENTS", "151515"],
+  ["AUTOMATION", "3d3c3a"],
+  ["COMPUTER VISION", "151515"],
+  ["LLM FINE-TUNING", "3d3c3a"],
+  ["FRONTEND DESIGN", "151515"],
+  ["HACKATHONS", "3d3c3a"],
 ]
 
 # ---------------------------------------------------------------- projects

@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Sanjay05062026&label=PROFILE%20VIEWS&color=7c3aed&style=for-the-badge" alt="Profile views" />
-  <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20COLLAB-22c55e?style=for-the-badge&labelColor=0a1122" alt="Open to collaborate" />
+  <img src="https://komarev.com/ghpvc/?username=Sanjay05062026&label=PROFILE%20VIEWS&color=151515&style=for-the-badge" alt="Profile views" />
+  <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20COLLAB-151515?style=for-the-badge&labelColor=6f6d68" alt="Open to collaborate" />
 </p>
 
 <img src="assets/sections/about.svg" width="100%" alt="01 Who am I" />
@@ -31,7 +31,7 @@
   </tr>
   <tr>
     <td><b>🧠&nbsp;AI&nbsp;·&nbsp;Vision</b></td>
-    <td><img src="https://skillicons.dev/icons?i=pytorch,opencv&theme=dark" height="44" alt="PyTorch, OpenCV" /> <img src="https://img.shields.io/badge/YOLO-Ultralytics-0b23a9?style=for-the-badge&labelColor=0a1122" height="28" alt="YOLO" /> <img src="https://img.shields.io/badge/Ollama-Local%20LLMs-a78bfa?style=for-the-badge&labelColor=0a1122" height="28" alt="Ollama" /></td>
+    <td><img src="https://skillicons.dev/icons?i=pytorch,opencv&theme=dark" height="44" alt="PyTorch, OpenCV" /> <img src="https://img.shields.io/badge/YOLO-Ultralytics-3d3c3a?style=for-the-badge&labelColor=151515" height="28" alt="YOLO" /> <img src="https://img.shields.io/badge/Ollama-Local%20LLMs-3d3c3a?style=for-the-badge&labelColor=151515" height="28" alt="Ollama" /></td>
   </tr>
   <tr>
     <td><b>🗄️&nbsp;Databases</b></td>
@@ -44,12 +44,12 @@
 </table>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI%20AGENTS-22d3ee?style=for-the-badge" alt="Ai Agents" />
-  <img src="https://img.shields.io/badge/AUTOMATION-a78bfa?style=for-the-badge" alt="Automation" />
-  <img src="https://img.shields.io/badge/COMPUTER%20VISION-f472b6?style=for-the-badge" alt="Computer Vision" />
-  <img src="https://img.shields.io/badge/LLM%20FINE--TUNING-fbbf24?style=for-the-badge" alt="Llm Fine-Tuning" />
-  <img src="https://img.shields.io/badge/FRONTEND%20DESIGN-34d399?style=for-the-badge" alt="Frontend Design" />
-  <img src="https://img.shields.io/badge/HACKATHONS-60a5fa?style=for-the-badge" alt="Hackathons" />
+  <img src="https://img.shields.io/badge/AI%20AGENTS-151515?style=for-the-badge" alt="Ai Agents" />
+  <img src="https://img.shields.io/badge/AUTOMATION-3d3c3a?style=for-the-badge" alt="Automation" />
+  <img src="https://img.shields.io/badge/COMPUTER%20VISION-151515?style=for-the-badge" alt="Computer Vision" />
+  <img src="https://img.shields.io/badge/LLM%20FINE--TUNING-3d3c3a?style=for-the-badge" alt="Llm Fine-Tuning" />
+  <img src="https://img.shields.io/badge/FRONTEND%20DESIGN-151515?style=for-the-badge" alt="Frontend Design" />
+  <img src="https://img.shields.io/badge/HACKATHONS-3d3c3a?style=for-the-badge" alt="Hackathons" />
 </p>
 
 <img src="assets/sections/work.svg" width="100%" alt="03 Featured builds" />
@@ -102,7 +102,7 @@
 <img src="assets/sections/contact.svg" width="100%" alt="05 Connect" />
 
 <p align="center">
-  <a href="https://github.com/Sanjay05062026"><img src="https://img.shields.io/badge/GitHub-0a1122?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://github.com/Sanjay05062026"><img src="https://img.shields.io/badge/GitHub-151515?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
 <p align="center">
