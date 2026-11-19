@@ -1,0 +1,3 @@
+_preview*.html
+tools/__pycache__/
+.claude/

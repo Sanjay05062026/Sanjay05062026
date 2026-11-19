@@ -1,0 +1,122 @@
+# ======================================================================
+#  Everything on your GitHub profile comes from this file + live GitHub data.
+#  Edit it (on github.com is fine), commit, and the "Build profile" workflow
+#  regenerates every card and README.md within a minute or two.
+#  Stats, languages, contributions and the repo list also refresh daily.
+# ======================================================================
+
+[profile]
+name = "SANJAY"
+handle = "Sanjay05062026"
+tagline = ["I love to code &", "make ideas real."]
+# Typed one after another in the header.
+roles = ["AI Engineer", "Agent Builder", "Automation Nerd", "Hackathon Builder", "Frontend Designer"]
+status = "available for work & collabs"
+
+# Rows of the ID card (a "GITHUB" row with live numbers is added automatically).
+info = [
+  ["NAME", "Sanjay"],
+  ["ROLE", "AI Engineer · Agent Builder"],
+  ["STUDY", "B.Tech Artificial Intelligence · 6th sem"],
+  ["BASED", "India"],
+  ["FOCUS", "AI agents · computer vision · automation"],
+  ["INTO", "hackathons · frontend design · new ideas"],
+]
+
+# Typed into the "now.log" terminal. Text after " // " is shown dimmed.
+now = [
+  "building AI agents that can use a computer // Lefty",
+  "real-time computer vision with YOLO // KRATOS-X",
+  "automating the boring stuff",
+  "designing clean, fast frontends",
+  "joining hackathons whenever I can",
+]
+
+quotes = [
+  "Build things people can play with.",
+  "Ship fast, learn faster.",
+  "AI is a tool. Imagination is the engine.",
+]
+
+# Leave a link empty ("") to hide its button.
+[links]
+linkedin = ""
+instagram = ""
+email = ""
+website = ""
+
+# ---------------------------------------------------------------- tech stack
+# Icon names: https://skillicons.dev (e.g. python, react, docker, supabase)
+[[stack]]
+label = "⌨️ Languages"
+icons = ["python", "java", "js", "cs", "html", "css"]
+
+[[stack]]
+label = "🧠 AI · Vision"
+icons = ["pytorch", "opencv"]
+badges = [
+  { text = "YOLO", sub = "Ultralytics", color = "0b23a9" },
+  { text = "Ollama", sub = "Local LLMs", color = "a78bfa" },
+]
+
+[[stack]]
+label = "🗄️ Databases"
+icons = ["mysql", "supabase"]
+
+[[stack]]
+label = "🛠️ Tools"
+icons = ["git", "github", "vscode", "vercel", "windows"]
+
+[exploring]
+chips = [
+  ["AI AGENTS", "22d3ee"],
+  ["AUTOMATION", "a78bfa"],
+  ["COMPUTER VISION", "f472b6"],
+  ["LLM FINE-TUNING", "fbbf24"],
+  ["FRONTEND DESIGN", "34d399"],
+  ["HACKATHONS", "60a5fa"],
+]
+
+# ---------------------------------------------------------------- projects
+# FEATURED cards, best first: move a [[project]] block up to rank it higher.
+# Only `repo` is required; anything you leave out is filled in from GitHub
+# (description, languages, website). Every other public repo still shows
+# automatically under "All works", newest first.
+[[project]]
+repo = "Borderline-Surveillance-System"
+title = "KRATOS-X"
+kind = "computer vision · security"
+desc = "AI border surveillance: YOLO11 / RT-DETR detection, restricted zones per camera, and a SHA-256 hash chain that proves evidence was not tampered with."
+tags = ["Python", "YOLO11", "RT-DETR", "JavaScript"]
+
+[[project]]
+repo = "Crowd-Management-System"
+kind = "computer vision · operations"
+desc = "Venue security console: 2×2 CCTV wall, YOLO head counting, crowd-flow prediction, VIP face recognition and a fire detector that ignores red objects."
+tags = ["Python", "YOLO", "Face Recognition", "JS"]
+
+[[project]]
+repo = "LEFTY"
+kind = "ai agent · windows assistant"
+desc = "Press Ctrl+Space in any app, say what you want, and Lefty either points at each step for you or clicks and types it himself, asking before anything risky."
+tags = ["JavaScript", "C#", "AI Agent", "Windows"]
+lang = "JS · C#"
+
+[[project]]
+repo = "crefynd"
+kind = "ai marketplace"
+desc = "Marketplace that matches brands with AI content creators by how close their past work is, with a local Llama brief assistant running through Ollama."
+tags = ["JavaScript", "Ollama", "Llama 3.2"]
+live = "https://crefynd.vercel.app"
+
+[[project]]
+repo = "EpicFunds"
+kind = "mobile app prototype"
+desc = "Loan management app prototype with borrower flows (apply, pay, track) and a loan-officer app for reviewing applications."
+live = "https://epicfunds-prototype.vercel.app"
+
+[[project]]
+repo = "MINI_PROJECTS"
+kind = "python playground"
+desc = "Where it started: Hangman, Rock-Paper-Scissors and a secure Password Generator built with Python's secrets module."
+tags = ["Python", "CLI"]
