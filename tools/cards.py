@@ -248,7 +248,7 @@ def header(cfg: dict, avatar: bytes | None = None) -> str:
 
 
 # ------------------------------------------------------------------ ID card
-def id_card(cfg: dict, dots: dict | None, github_row: str | None) -> str:
+def id_card(cfg: dict, photo: bytes | None, github_row: str | None) -> str:
     p = cfg["profile"]
     W, H = 1200, 540
     BX, BY, BS = 40, 80, 412
@@ -269,11 +269,11 @@ def id_card(cfg: dict, dots: dict | None, github_row: str | None) -> str:
     title_bar(cv, "sanjay@github: ~/id", "ID · " + p["handle"][-4:])
 
     cv.add(f'<rect x="{BX}" y="{BY}" width="{BS}" height="{BS}" rx="12" fill="{TILE}"/>')
-    if dots:
-        cell = BS / dots["grid"]
-        circles = "".join(f'<circle cx="{n(BX + (c + .5) * cell)}" cy="{n(BY + (r + .5) * cell)}" r="{n(s * cell * 1.05)}"/>'
-                          for c, r, s in dots["dots"])
-        cv.add(f'<g clip-path="url(#reveal)"><g fill="url(#pg)">{circles}</g></g>')
+    if photo:
+        # black-and-white cutout, bottom-aligned in the frame, revealed top to bottom
+        b64 = base64.b64encode(photo).decode()
+        cv.add(f'<g clip-path="url(#box)"><g clip-path="url(#reveal)"><image x="{BX}" y="{BY + 14}" width="{BS}" height="{BS}" '
+               f'preserveAspectRatio="xMidYMax meet" href="data:image/webp;base64,{b64}"/></g></g>')
     cv.add(f'<g clip-path="url(#box)"><rect class="sc" x="{BX}" y="{BY - 80}" width="{BS}" height="80" fill="url(#scanv)"/></g>')
     cv.add(f'<rect x="{BX}" y="{BY}" width="{BS}" height="{BS}" rx="12" fill="none" stroke="{LINE}" stroke-width="1.5"/>')
     cv.add(f'<rect x="484" y="80" width="1" height="{H - 120}" fill="{LINE}"/>')

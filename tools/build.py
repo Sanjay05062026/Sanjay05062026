@@ -3,8 +3,9 @@
 Builds the whole profile: fetches live GitHub data, renders every animated SVG
 into /assets and writes README.md from README.template.md + profile.toml.
 
-    python tools/build.py                          # normal run (also what the workflow runs)
-    python tools/build.py --portrait cutout.png    # re-sample the dotted portrait from a new photo
+    python tools/build.py      # normal run (also what the workflow runs)
+
+To change the ID-card photo, replace tools/portrait.webp (transparent-background cutout).
 
 Set GITHUB_TOKEN for higher API limits and GraphQL contributions (Actions does this).
 If GitHub can't be reached, the last fetched data in tools/cache/github.json is used.
@@ -27,7 +28,6 @@ import fetch  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets"
 CACHE = ROOT / "tools" / "cache" / "github.json"
-DOTS = ROOT / "tools" / "portrait-dots.json"
 
 SKILL_NAMES = {
     "js": "JavaScript", "ts": "TypeScript", "cs": "C#", "cpp": "C++", "py": "Python", "postgres": "PostgreSQL",
@@ -236,13 +236,6 @@ def main() -> None:
     cfg = tomllib.loads((ROOT / "profile.toml").read_text(encoding="utf-8"))
     handle = cfg["profile"]["handle"]
 
-    if "--portrait" in sys.argv:
-        from portrait import sample
-        dots = sample(sys.argv[sys.argv.index("--portrait") + 1])
-        DOTS.write_text(json.dumps(dots, separators=(",", ":")), encoding="utf-8")
-        print(f"portrait: {len(dots['dots'])} dots")
-    dots = json.loads(DOTS.read_text(encoding="utf-8")) if DOTS.exists() else None
-
     data = load_data(handle)
     items = featured(cfg, data)
     sections = {"about": ("01", "WHO AM I", "// whoami"), "stack": ("02", "TECH STACK", "// tools of the trade"),
@@ -256,7 +249,8 @@ def main() -> None:
     if data:
         total = sum(c for _, c in data["calendar"])
         gh_row = f"{data['public_repos']} public repos · {total} contributions this year"
-    write("id-card.svg", cards.id_card(cfg, dots, gh_row))
+    photo = ROOT / "tools" / "portrait.webp"  # black-and-white cutout shown on the ID card
+    write("id-card.svg", cards.id_card(cfg, photo.read_bytes() if photo.exists() else None, gh_row))
     prof = cfg["profile"]
     write("now.svg", cards.now_card(prof.get("now", [])))
     for key, (num, title, note) in sections.items():
