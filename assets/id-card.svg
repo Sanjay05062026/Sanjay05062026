@@ -19,7 +19,7 @@
 <text x="516" y="254" class="m" font-size="15" fill="#151515" textLength="162" xml:space="preserve" clip-path="url(#t5)"><tspan fill="#a8a6a0">BASED ...... </tspan><tspan fill="#151515">India</tspan></text>
 <text x="516" y="283.3" class="m" font-size="15" fill="#151515" textLength="477" xml:space="preserve" clip-path="url(#t6)"><tspan fill="#a8a6a0">FOCUS ...... </tspan><tspan fill="#151515">AI agents · computer vision · automation</tspan></text>
 <text x="516" y="312.7" class="m" font-size="15" fill="#151515" textLength="477" xml:space="preserve" clip-path="url(#t7)"><tspan fill="#a8a6a0">INTO ....... </tspan><tspan fill="#151515">hackathons · frontend design · new ideas</tspan></text>
-<text x="516" y="342" class="m" font-size="15" fill="#151515" textLength="504" xml:space="preserve" clip-path="url(#t8)"><tspan fill="#a8a6a0">GITHUB ..... </tspan><tspan fill="#151515">7 public repos · 55 contributions this year</tspan></text>
+<text x="516" y="342" class="m" font-size="15" fill="#151515" textLength="504" xml:space="preserve" clip-path="url(#t8)"><tspan fill="#a8a6a0">GITHUB ..... </tspan><tspan fill="#151515">7 public repos · 73 contributions this year</tspan></text>
 <circle class="pulse" cx="638" cy="366.3" r="4.5" fill="#151515"/>
 <text x="516" y="371.3" class="m" font-size="15" fill="#151515" textLength="387" xml:space="preserve" clip-path="url(#t9)"><tspan fill="#a8a6a0">STATUS ..... </tspan>  <tspan fill="#151515" font-weight="600">available for work &amp; collabs</tspan></text>
 <text x="516" y="414.7" class="m" font-size="16" fill="#151515" textLength="336" xml:space="preserve" clip-path="url(#t10)"><tspan fill="#6f6d68">sanjay@github:~$ </tspan><tspan fill="#151515">./build --mode=fun</tspan></text>
